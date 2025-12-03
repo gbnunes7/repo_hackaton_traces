@@ -2,7 +2,10 @@ function getUserName(user) {
     return user.name.toUpperCase();
   }
   
-  function processUser(userId) {
+    if (!user) {
+        return '';
+    }
+    return user.name.toUpperCase();
     const user = getUserById(userId);
     return getUserName(user);
   }
