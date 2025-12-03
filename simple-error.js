@@ -1,5 +1,5 @@
 function getUserName(user) {
-    return user.name.toUpperCase();
+    return (user?.name || 'UNKNOWN').toUpperCase();
   }
   
   function processUser(user) {
