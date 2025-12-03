@@ -1,4 +1,7 @@
 function getUserName(user) {
+    if (!user) {
+      return '';
+    }
     return user.name.toUpperCase();
   }
   
