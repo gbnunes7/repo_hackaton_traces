@@ -80,7 +80,7 @@ interface User {
   
     private normalizePreferences(prefs: UserPreferences): UserPreferences {
       return {
-        ...prefs,
+          sms: false
         notifications: this.processNotificationSettings(prefs.notifications)
       };
     }
